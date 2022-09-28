@@ -1,0 +1,11 @@
+you were not ready
+But (drop-down menu to the different lines)
+ex: But they issued the shovel and the rifle and you dug
+
+I write him daily
+And  (drop-down)
+ex: And so I learn to ignore hims
+
+
+screen flicker effect whenever a drop-down gets selected
+change cursor to crosshair when hover over clickable
