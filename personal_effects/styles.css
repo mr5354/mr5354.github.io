@@ -1,3 +1,43 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 3vh;
+    transition: 1s;
+}
+
+p {
+    margin: 1vh 4px;
+}
+
+.but {
+    display: flex;
+    flex-direction: row;
+}
+
+.events {
+    color: red;
+    opacity: 0;
+    transition: opacity 2s ease-out 30s;
+    cursor: crosshair;
+}
+
+.events:hover {
+    opacity: 1;
+    transition: opacity 0.5s ease-out 0s;
+}
+
+.hello {
+    font-size: 22px;
+    transition: color 0.5s ease-out 10s;
+}
+
+.hello:hover {
+    color: rgb(47, 176, 47);
+    transition: color 0.5s ease-out 0s;
+}
+
+footer {
+    color: rgb(123, 123, 123);
+    margin-top: 30px;
+    display: flex;
+    align-self: flex-end;
 }

@@ -9,3 +9,13 @@ ex: And so I learn to ignore hims
 
 screen flicker effect whenever a drop-down gets selected
 change cursor to crosshair when hover over clickable
+
+↑ unrealistic at knowledge at this point
+
+
+
+home page with the repeating line
+different page every line but goes back to repeating line
+button for each diff line
+
+when line is clicked, the background gets more red
