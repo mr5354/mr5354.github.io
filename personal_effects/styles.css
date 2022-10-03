@@ -1,11 +1,27 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 3vh;
-    transition: 1s;
+    background-image: url(images/SolmazSharif.jpeg);
+    background-size: 100%;
 }
 
 p {
     margin: 1vh 4px;
+}
+
+.desktop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.poem {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.47);
+    border-radius: 4px;
+    padding: 15px;
+    flex-shrink: 0;
 }
 
 .but {
@@ -33,6 +49,17 @@ p {
 .hello:hover {
     color: rgb(47, 176, 47);
     transition: color 0.5s ease-out 0s;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
 }
 
 footer {
