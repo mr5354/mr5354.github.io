@@ -1,0 +1,46 @@
+body {
+    background-image: url('assets/gallerybackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+p {
+    font-size: 0.8vw;
+}
+
+.gallery {
+    display: grid;
+    grid-template: minmax(100px, auto) / repeat(4, 1fr);
+}
+
+.pair {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-items: center;
+    margin: 10px;
+}
+
+.photo {
+    border: medium outset rgb(71, 71, 71);
+    height: 125px;
+    padding: 5px;
+}
+
+.img_text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    visibility: hidden;
+    color: black;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    margin: 5px;
+}
+
+.pair:hover .img_text {
+    visibility: visible;
+    opacity: 1;
+}
