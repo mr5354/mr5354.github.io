@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(222, 240, 255);
+    margin: 5vmin;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    color: rgb(29, 49, 49);
+    font-size: 2em;
+}
+
+footer {
+    color: rgb(85, 86, 86);
+    font-size: 1em;
+}
+
+.ball_pit {
+    display: grid;
+    grid-template: 1fr 65vh / repeat(5, 1fr);
+    justify-items: center;
+    animation: gradient 5s infinite;
+}
+
+.ball {
+    display: flex;
+    width: 5vmin;
+    height: 5vmin;
+    border-radius: 5vmin;
+    animation: fade 2s infinite, fall 2s infinite;
+}
+
+#ball1 {
+    background-color: rgb(106, 186, 59);
+}
+
+#ball2 {
+    background-color: rgb(63, 162, 249);
+    animation-delay: -.5s;
+}
+
+#ball3 {
+    background-color: rgb(255, 159, 63);
+    animation-delay: -4.3s;
+}
+
+#ball4 {
+    background-color: rgb(249, 139, 249);
+    animation-delay: -5.1s;
+}
+
+#ball5 {
+    background-color: rgb(246, 80, 80);
+    animation-delay: -6.6s;
+}
+
+@keyframes gradient {
+    0% {
+        background-color: rgba(214, 170, 255, 0.5);
+    }
+    50% {
+        background-color: rgba(157, 169, 255, 0.5);
+    }
+    100% {
+        background-color: rgba(214, 170, 255, 0.5);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.2;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fall {
+    0%,
+    10% {
+        transform: translateY(-10vh) scale(1);
+        animation-timing-function: ease-in;
+    }
+    40% {
+        transform: translateY(65vh) scale(0.5, 1.5);
+        animation-timing-function: ease-out;
+    }
+    41% {
+        transform: translateY(65vh) scale(1.5, 0.5);
+    }
+    60% {
+        transform: translateY(50vh) scale(1);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: translateY(110vh) scale(0.5, 1.5);
+    }
+}
