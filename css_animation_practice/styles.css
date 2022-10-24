@@ -1,5 +1,6 @@
 body {
     background-color: rgb(222, 240, 255);
+    overflow: hidden;
     margin: 5vmin;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -16,16 +17,16 @@ footer {
 
 .ball_pit {
     display: grid;
-    grid-template: 1fr 65vh / repeat(5, 1fr);
+    grid-template: 1fr 66vh / repeat(5, 1fr);
     justify-items: center;
     animation: gradient 5s infinite;
 }
 
 .ball {
     display: flex;
-    width: 5vmin;
-    height: 5vmin;
-    border-radius: 5vmin;
+    width: 7vmin;
+    height: 7vmin;
+    border-radius: 7vmin;
     animation: fade 2s infinite, fall 2s infinite;
 }
 
