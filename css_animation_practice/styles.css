@@ -102,3 +102,12 @@ footer {
         transform: translateY(110vh) scale(0.5, 1.5);
     }
 }
+
+@keyframes shape {
+    from {
+        border-radius: 0px;
+    }
+    to {
+        border-radius: 100px;
+    }
+}
