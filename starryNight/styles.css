@@ -1,25 +1,90 @@
 body {
     background-color: black;
     margin: 0;
-    overflow: hidden;
+}
+
+main {
+    display: grid;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5vmin;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(240, 248, 255, 0.677);
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50vh;
+    left: 0;
+    right: 0;
+    text-align: center;
+    user-select: none;
+}
+
+h4 {
+    margin-bottom: 1vh;
+}
+
+p {
+    margin: 1vh;
+    font-size: 1em;
+}
+
+a.button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(114, 114, 114);
+    padding: 10px 13px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.2vmin;
+    margin: 15px 7px;
+    cursor: pointer;
+    transition: background-color .2s, padding .2s, margin .2s;
+}
+
+a.button:hover {
+    background-color: rgb(156, 156, 156);
+    padding: 15px 18px;
+    margin: 10px 2px;
+}
+
+footer {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1vmin;
+    margin: 3vh;
 }
 
 
-/* .star {
-    background: url(assets/star.png);
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-} */
+/* .star {} */
 
-
-/* .star:hover textarea {
-    width: 1.5vmin;
-    height: 1.5vmin;
-} */
+.star:hover {
+    cursor: pointer;
+}
 
 textarea {
     resize: none;
+    height: 100vh;
+    z-index: 2;
+}
+
+.hide {
+    font-size: 5px;
+    display: none;
+}
+
+.star:hover+.hide {
+    display: block;
+    color: white;
+}
+
+a:visited {
+    color: rgb(202, 221, 255);
 }
 
 * {
@@ -27,16 +92,24 @@ textarea {
 }
 
 img {
-    width: 7vmin;
-    height: 7vmin;
+    height: 10vh;
+    width: auto;
 }
 
-body {
-    background-color: black;
+.headshot {
+    height: 30vh;
+    width: auto;
 }
 
-* {
-    box-sizing: border-box;
+#starnight {
+    margin-bottom: 3vmin;
+    width: 45vw;
+    height: auto;
+}
+
+#email_img {
+    width: 60vw;
+    height: auto;
 }
 
 .container {
@@ -45,6 +118,7 @@ body {
     justify-content: space-between;
     height: 100vh;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .container>div {
@@ -71,30 +145,35 @@ body {
     width: 60%;
 }
 
-.img1 {
+#img1 {
     transform: scale(2);
 }
 
-.img2 {
+#img2 {
     transform: scale(2.5);
 }
 
-.img3 {
+#img3 {
     transform: scale(0.6);
 }
 
-.img4 {
+#img4 {
     transform: scale(2.7);
 }
 
-.img5 {
+#img5 {
     transform: scale(1.8)
 }
 
-.img6 {
+#img6 {
     transform: scale(.5)
 }
 
-body {
-    margin: 0;
+@keyframes twinkle {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.7;
+    }
 }
