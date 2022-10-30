@@ -60,17 +60,13 @@ footer {
     margin: 3vh;
 }
 
-
-/* .star {} */
+.star,
+.empty_star {
+    animation: twinkle 7s infinite;
+}
 
 .star:hover {
     cursor: pointer;
-}
-
-textarea {
-    resize: none;
-    height: 100vh;
-    z-index: 2;
 }
 
 .hide {
@@ -119,16 +115,18 @@ img {
     height: 100vh;
     flex-wrap: wrap;
     overflow: hidden;
+    background-image: url('assets/starsky.jpg');
+    background-repeat: repeat;
 }
 
 .container>div {
     font-size: 5vw;
     padding: .5em;
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0);
     margin: 10px;
     border-radius: 3px;
-    background: rgb(0, 0, 0);
-    border: 5px solid rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    border: 5px solid rgba(0, 0, 0, 0);
 }
 
 .container>div:nth-child(odd) {
@@ -147,33 +145,71 @@ img {
 
 #img1 {
     transform: scale(2);
+    animation-delay: -.5s;
+    animation-duration: 6s;
 }
 
 #img2 {
     transform: scale(2.5);
+    animation-delay: 3.5s;
+    animation-duration: 8s;
 }
 
 #img3 {
     transform: scale(0.6);
+    animation-delay: 1.5s;
+    animation-duration: 6.3s;
 }
 
 #img4 {
     transform: scale(2.7);
+    animation-delay: 1s;
+    animation-duration: 5s;
 }
 
 #img5 {
-    transform: scale(1.8)
+    transform: scale(1.8);
+    animation-delay: 2s;
+    animation-duration: 4.6s;
 }
 
 #img6 {
-    transform: scale(.5)
+    transform: scale(.5);
+    animation-delay: -1s;
+    animation-duration: 7.1s;
+}
+
+#img7 {
+    animation-delay: -3s;
+    animation-duration: 8.4s;
+}
+
+#img8 {
+    animation-delay: -5s;
+    animation-duration: 5.5s;
+}
+
+#img9 {
+    animation-delay: -3.6s;
+    animation-duration: 6.7s;
+}
+
+#img10 {
+    animation-delay: -2s;
+    animation-duration: 7.2s;
 }
 
 @keyframes twinkle {
-    from {
+    0% {
         opacity: 1;
+        filter: blur(0px);
     }
-    to {
-        opacity: 0.7;
+    50% {
+        opacity: 0.1;
+        filter: blur(2px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
     }
 }
