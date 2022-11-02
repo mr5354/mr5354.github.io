@@ -27,10 +27,12 @@ main {
 }
 
 .fish_tank {
-    background: linear-gradient(#9af3ff, #10afff);
+    background: linear-gradient(rgb(77, 225, 255) 10%, #9af3ff 25%, #10bfff 26%, #84deff 28.5%, rgb(38, 110, 255));
     border-radius: 5vmin;
+    margin: 5vmin;
     width: 50vw;
     height: auto;
+    overflow: hidden;
 }
 
 a.button {
