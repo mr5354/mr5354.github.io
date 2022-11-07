@@ -3,8 +3,8 @@ var sizeM = 10;
 
 
 function setup() {
-    var canvas = createCanvas(1000, 500);
-    canvas.parent('sketch-holder');
+    var canvas = createCanvas(windowWidth * 0.5, windowHeight * 0.5);
+    canvas.parent('sketch_holder');
     background(240);
 }
 
@@ -47,4 +47,9 @@ function keyPressed() {
     } else if (keyCode === SHIFT) {
         background(240);
     }
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth * 0.5, windowHeight * 0.5);
+    background(240);
 }

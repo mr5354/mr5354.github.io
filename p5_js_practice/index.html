@@ -19,30 +19,40 @@
 </head>
 
 <body>
-    <h3>Simple Paint Tool</h3>
     <main>
-        <div id="sketch-holder"></div>
-        <div id="explanation">
-            <p>Press...</p>
-            <ul>
-                <li>1 for red</li>
-                <li>2 for blue</li>
-                <li>3 for yellow</li>
-                <li>4 for green</li>
-                <li>5 for purple</li>
-                <li>6 for black</li>
-                <li>7 for white</li>
-                <li>8 for erasing</li>
-            </ul>
-            <ul>
-                <li>Up arrow to make brush bigger</li>
-                <li>Down arrow to make brush smaller</li>
-                <li>Shift to reset the canvas</li>
-            </ul>
+        <h3>Simple Paint Tool</h3>
+        <div id="sketch_tool">
+            <div id="sketch_holder"></div>
+            <div id="explanation">
+                <p>Press...</p>
+                <ul>
+                    <li>1 for red</li>
+                    <li>2 for blue</li>
+                    <li>3 for yellow</li>
+                    <li>4 for green</li>
+                    <li>5 for purple</li>
+                    <li>6 for black</li>
+                    <li>7 for white</li>
+                    <li>8 for erasing</li>
+                </ul>
+                <ul>
+                    <li>Up arrow to make brush bigger</li>
+                    <li>Down arrow to make brush smaller</li>
+                    <li>Shift to reset the canvas</li>
+                </ul>
 
-            <p>Enjoy!</p>
+                <p>Enjoy!</p>
+                <p id="warning">
+                    Be careful! The canvas will be wiped when the window is resized!
+                </p>
+            </div>
         </div>
     </main>
+    <footer>
+        Special Thanks to
+        <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a> and
+        <a href="https://p5js.org" target="_blank">P5.js</a>
+    </footer>
 </body>
 
 </html>
