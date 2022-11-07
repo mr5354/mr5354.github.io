@@ -3,7 +3,7 @@ var sizeM = 10;
 
 
 function setup() {
-    var canvas = createCanvas(400, 400);
+    var canvas = createCanvas(1000, 500);
     canvas.parent('sketch-holder');
     background(240);
 }
