@@ -1,23 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik+Bubbles:wght@900&display=swap');
 .button {
-    background-color: #4CAF50;
-    /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    justify-self: center;
+    background: rgb(103, 147, 125);
+    border-radius: 3px;
+    width: 10vmin;
+    height: 7vmin;
+    cursor: pointer;
+    font-family: 'Rubik Bubbles';
+    font-size: 2vmin;
 }
 
 body {
-    font-family: : 'Montserrat', sans-serif;
-    background-color: "light brown";
-    background: ivory;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 20px;
-    overflow-x: hidden;
+    background-image: url('assets/background.png');
+    background-color: rgb(102, 58, 48);
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: repeat-x;
+    overflow: hidden;
+}
+
+main {
+    height: 82vh;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    font-family: 'Rubik Bubbles';
+    color: brown;
+    font-size: 4vmin;
+}
+
+h1 {
+    text-align: center;
+}
+
+#caterpillar {
+    overflow: hidden;
+}
+
+#caterpillar,
+#c_body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+img {
+    margin: -2.8vmin;
+    padding: 0px;
 }

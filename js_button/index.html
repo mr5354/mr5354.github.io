@@ -9,24 +9,23 @@
     <script src="script.js"></script>
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="button.png" />
+    <link rel="icon" href="assets/button.png" />
 
     <title>Javascript Button</title>
 </head>
 
 <body>
-    <p>Click the button to elongate the caterpillar.</p>
+    <main>
+        <h1>CLICK THE BUTTON TO ELONGATE THE CATERPILLAR.</h1>
 
-    <button onclick="grow()">Grow me!</button>
-
-    <script>
-        function grow() {
-            var x = document.createElement("BUTTON");
-            var t = document.createTextNode("----");
-            x.appendChild(t);
-            document.body.appendChild(x);
-        }
-    </script>
+        <button class="button" onclick="grow()">Grow Me!</button>
+        <div></div>
+        <div id="caterpillar">
+            <img src="assets/c_head.png" alt="caterpillar head" />
+            <div id="c_body"></div>
+            <img src="assets/c_tail.png" alt="caterpillar tail" />
+        </div>
+    </main>
 </body>
 
 </html>
