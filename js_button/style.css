@@ -10,6 +10,10 @@
     font-size: 2vmin;
 }
 
+.button:hover {
+    background: rgb(54, 107, 81);
+}
+
 body {
     background-image: url('assets/background.png');
     background-color: rgb(102, 58, 48);
