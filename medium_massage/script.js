@@ -28,9 +28,9 @@ function showQuotes() {
             var randomLeft = getRandom(0, 100)
             x.style.top = randomTop + "vh"
             x.style.left = randomLeft + "vw"
+            x.style.display = "none"
 
             quoteLibrary.appendChild(x)
-            x.style.display = "none"
             typeWriterDelay(x)
         }
         document.body.style.backgroundColor = "black"
