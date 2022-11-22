@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(255, 231, 200);
+    overflow: hidden;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#focus {
+    display: grid;
+    position: fixed;
+    z-index: 1;
+    height: 90vh;
+    width: 100vw;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#bye {
+    color: white;
+    display: none;
+    transform: scale(-1, 1);
+}
+
+img {
+    width: 15vmin;
+    height: auto;
+    margin: 1vmin;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+img:hover {
+    width: 17vmin;
+    height: auto;
+    margin: 0;
+}
+
+#dark {
+    overflow: hidden;
+    height: 94vh;
+}
+
+p {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    margin: 0px;
+    padding: 0px;
+    width: fit-content;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.521);
+}
+
+p::after {
+    font-size: larger;
+    content: "|";
+    margin-left: 2px;
+    animation: blink 0.7s infinite;
+}
+
+h1 {
+    font-size: 4vmin;
+}
+
+footer {
+    margin-left: 1vmin;
+    position: fixed;
+    bottom: 1vmin;
+    font-size: 2vmin;
+    color: gray;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes typer {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
