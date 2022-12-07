@@ -1,0 +1,55 @@
+a site to educate people about sea creatures
+
+- scrolling down would reveal more of the sea
+
+- creatures are first masked out (dark silhouette)
+ - when clicked, a multiple choice question about the animal pops up
+  - if answered correctly, reveals animal
+  - when incorrect, the chosen answer becomes 50% alpha channel & unclickable
+   - user could attempt until correct, revealing the animal
+
+- starts in sky (ex: sea gulls) and goes to deep sea (ex: anglerfish)
+
+- maybe have an array of the creatures & use some at a time so the user could refresh to have different creatures to learn about
+
+- make a class for the creatures
+ - property ideas: habitat (sky, shallow, deep, etc), size, question, answer, motion (maybe), image
+ - function ideas: quiz, reveal appearance, click (maybe other facts when it's already revealed, maybe link to wiki or other educational source to learn more about it), hover for name (display ??? when not revealed)
+
+- environment ideas
+ - scroll to reveal function
+ - gradient darker as it gets lower (should it be a preloaded large image or onscreen effect that gets darker? if preloaded, positioning would be hard for creatures? look at last point)
+ - need to keep creatures in position - even when user scrolls down, they could scroll up to go back
+ - want a splash in/out effect when going underwater (happen when water surface is at middle of screen?)
+ - ooooooh maybe a one page scroll effect with some scrolling leeway for each page to make transition between sky and sea easier (inspired by idea 2 & idea 6 in https://youtu.be/ZZ4xAIo7JOg)
+ - light waver effect for light rays into water?
+ - clouds moving in sky? times of day? (maybe for after final project)
+ - anchor to get to top of page
+  - anchor shows progress to bottom and hits bottom of page when it's in the deepest part of the sea
+ - maybe have a text in the background behind animals (different shade than background) to talk about the specific part of the sea
+
+- maybe have site map to see individual animals?
+
+
+
+
+inspiration and resources
+- parallax effect could be fun with the environment, fact boxes, and animals
+ - https://www.w3schools.com/howto/howto_css_parallax.asp
+ - https://www.sketch.com/blog/what-is-a-parallax-effect/
+ - https://webflow.com/blog/parallax-scrolling
+- webflow for Developers
+ - https://developers.webflow.com/docs/support
+- really cool site (Recap After Use)
+ - https://www.recapafteruse.co.uk/#home
+- marine life info
+ - https://oceana.org/marine-life/
+ - https://www.natgeokids.com/nz/category/discover/animals/sea-life/
+ - https://www.dec.ny.gov/animals/117322.html
+ - https://en.wikipedia.org/wiki/Marine_life
+ - https://www.noaa.gov/education/resource-collections/marine-life
+ - https://www.marinebio.org/creatures/
+ - https://ocean.si.edu/ecosystems/deep-sea/deep-sea
+ - https://oceana.org/marine-life/open-ocean
+ - https://www.nps.gov/subjects/oceans/open-ocean.htm
+ - https://www.marinebio.org/oceans/open-ocean/

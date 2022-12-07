@@ -1,0 +1,30 @@
+10/20
+- sea gradient on home page
+
+11/29
+- ideas txt file
+- proposal slides
+
+12/3
+- animal json
+
+12/6
+15:30
+- scroll research
+16:00
+- learn jquery
+17:30
+- scroll-snap
+- scroll research
+- attempt scroll-snap but couldn't use full page gradient with it
+ - had a page with two scrollbars (one for gradient, one for scroll-snap)
+19:00
+- parallax research
+- tried parallax using jquery
+ - when I used absolute position, it centered everything on the same place
+  -> used relative position in parent element, worked
+21:00
+- parallax works, but lower elements disappear because they use same values
+ -> used remainder to solve
+- scrollTo research
+- try to use scrollIntoView function & counter to pseudo snap scroll

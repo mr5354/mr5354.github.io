@@ -1,0 +1,9 @@
+scrolling
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap/Basic_concepts
+- https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter
+- https://dev.to/jonosellier/easy-overlay-scrollbars-variable-width-1mbh
+- https://codepen.io/SeanCodePenn/pen/pOrxXj
+
+jquery
+- https://youtube.com/playlist?list=PLillGF-RfqbYJVXBgZ_nA7FTAAEpp_IAc
+- https://youtu.be/h7gZY3_3Dqs

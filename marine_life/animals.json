@@ -1,0 +1,51 @@
+{
+    "habitat": "open sea",
+    "layers": [{
+            "epipelagic": {
+                "description": "This is the zone in which photosynthesis can occur, because light is available.",
+                "depth": 200,
+                "animals": {
+
+                }
+            }
+        },
+        {
+            "mesopelagic": {
+                "description": "This is also known as the twilight zone, because light becomes limited. There is less oxygen available to organisms in this zone.",
+                "depth": 1000,
+                "animals": {
+                    "name": "",
+                    "species": "",
+                    "region": "",
+                    "image": "",
+                    "facts": "",
+                    "quiz": {
+                        "question": "",
+                        "answer": ""
+                    }
+                }
+            }
+        },
+        {
+            "bathypelagic": {
+                "description": "This is a dark zone where water pressure is high and the water is cold (around 35-39 degrees).",
+                "depth": 4000,
+                "animals": {}
+            }
+        },
+        {
+            "abyssopelagic": {
+                "description": "This is the zone past the continental slope - the deep water just over the ocean bottom. This is also known as the abyssal zone.",
+                "depth": 6000,
+                "animals": {}
+            }
+        },
+        {
+            "hadopelagic": {
+                "description": "In some places, there are trenches that are deeper than the surrounding ocean floor. These areas are the hadopelagic zone. At a depth of over 36,000 feet, the Mariana Trench is the deepest known point in the ocean.",
+                "depth": 10000,
+                "animals": {}
+            }
+        }
+    ]
+}

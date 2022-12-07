@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    z-index: 5;
+    position: fixed;
+    top: 3vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#sea,
+#sea section {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+#sea {
+    height: 600vh;
+    background: linear-gradient(rgb(0, 213, 255) 7%, #9af3ff 15%, #10bfff 15.2%, #84deff 16%, rgb(0, 58, 174));
+}
+
+#sea section {
+    height: 100vh;
+    overflow: hidden;
+    transition: .15s ease-in-out;
+}
+
+.des {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.456);
+    padding: 30vmin;
+}
+
+#sea img {
+    z-index: 1;
+    position: relative;
+    height: 20vmin;
+    width: auto;
+    transition: .15s ease-in-out;
+    cursor: pointer;
+}
+
+#cover {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(10, 11, 13, 0.5);
+}
+
+#tbox {
+    display: grid;
+    grid-template-areas: "title  close" "info  info";
+    height: max-content;
+    width: 75vw;
+    border-radius: 20px;
+    background: rgb(210, 240, 255);
+    padding: 5vmin;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .15s ease-in-out;
+}
+
+#tbox h3 {
+    grid-area: title;
+    font-size: 4vmin;
+}
+
+#tbox img {
+    grid-area: close;
+    justify-self: end;
+    width: 5vmin;
+    height: auto;
+    margin: 0.5vmin;
+    cursor: pointer;
+    transition: .15s ease-in-out;
+}
+
+#tbox img:hover {
+    width: 6vmin;
+    height: auto;
+    margin: 0;
+}
+
+#tbox .info {
+    grid-area: info;
+    font-size: 2.5vmin;
+}
+
+.des h2 {
+    font-size: 5vmin;
+}
+
+.des p {
+    font-size: 3vmin;
+}
