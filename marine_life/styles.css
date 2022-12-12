@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+    background: linear-gradient(rgb(0, 213, 255) 7%, #9af3ff 15%, #10bfff 15.2%, #84deff 16%, rgb(0, 58, 174));
 }
 
 h1 {
@@ -11,11 +16,21 @@ h1 {
     top: 3vh;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: .15s ease-in-out;
+}
+
+a {
+    text-decoration: none;
     color: white;
 }
 
+h1:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+    cursor: pointer;
+}
+
 #sea,
-#sea section {
+.layer {
     margin: 0 auto;
     position: relative;
     width: 100%;
@@ -23,13 +38,16 @@ h1 {
 
 #sea {
     height: 600vh;
-    background: linear-gradient(rgb(0, 213, 255) 7%, #9af3ff 15%, #10bfff 15.2%, #84deff 16%, rgb(0, 58, 174));
 }
 
-#sea section {
+.layer {
     height: 100vh;
     overflow: hidden;
     transition: .15s ease-in-out;
+}
+
+.layer img {
+    animation: swim 5000ms infinite;
 }
 
 .des {
@@ -47,6 +65,11 @@ h1 {
     cursor: pointer;
 }
 
+#sea img:hover,
+.tbox img:hover {
+    transform: scale(1.2);
+}
+
 #cover {
     display: block;
     position: fixed;
@@ -56,9 +79,10 @@ h1 {
     width: 100vw;
     height: 100vh;
     background-color: rgba(10, 11, 13, 0.5);
+    transform-origin: center;
 }
 
-#tbox {
+.tbox {
     display: grid;
     grid-template-areas: "title  close" "info  info";
     height: max-content;
@@ -73,12 +97,12 @@ h1 {
     transition: .15s ease-in-out;
 }
 
-#tbox h3 {
+.tbox h3 {
     grid-area: title;
     font-size: 4vmin;
 }
 
-#tbox img {
+.tbox img {
     grid-area: close;
     justify-self: end;
     width: 5vmin;
@@ -88,13 +112,7 @@ h1 {
     transition: .15s ease-in-out;
 }
 
-#tbox img:hover {
-    width: 6vmin;
-    height: auto;
-    margin: 0;
-}
-
-#tbox .info {
+.tbox .info {
     grid-area: info;
     font-size: 2.5vmin;
 }
@@ -105,4 +123,16 @@ h1 {
 
 .des p {
     font-size: 3vmin;
+}
+
+@keyframes swim {
+    0% {
+        transform: translateX(5vw);
+    }
+    50% {
+        transform: translateX(-20vw);
+    }
+    100% {
+        transform: translateX(5vw);
+    }
 }

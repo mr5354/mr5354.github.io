@@ -9,20 +9,22 @@
     <title>Marine Life</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="assets/jquery.onepage-scroll.min.js" defer></script>
     <script src="script.js" defer></script>
 
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="icon" href="assets/heart_icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/onepage-scroll.css" />
+    <link rel="icon" href="assets/sea_wave.png" />
 </head>
 
 <body>
-    <h1>Marine Life</h1>
-    <div id="sea">
+    <h1><a href="#">Marine Life</a></h1>
+    <div id="sea" class="scroll-container">
         <section class="layer" id="sky">
             <div class="des">
                 <h2>Sky</h2>
             </div>
-            <img src="assets/test_fish.png" alt="test fish"></img>
+            <img src="assets/animals/puffin.png" alt="puffin" style="top: 20vh; left: 70vw;"></img>
         </section>
         <section class="layer" id="epipelagic">
             <div class="des">
@@ -31,6 +33,7 @@
                     This is the zone in which photosynthesis can occur, because light is available.
                 </p>
             </div>
+            <img src="assets/animals/sardines.png" alt="sardines" style="top: 60vh; left: 40vw;"></img>
         </section>
         <section class="layer" id="mesopelagic">
             <div class="des">
@@ -39,6 +42,7 @@
                     This is also known as the twilight zone, because light becomes limited. There is less oxygen available to organisms in this zone.
                 </p>
             </div>
+            <img src="assets/animals/swordfish.png" alt="swordfish" style="top: 50vh; left: 60vw;"></img>
         </section>
         <section class="layer" id="bathypelagic">
             <div class="des">
@@ -66,11 +70,13 @@
         </section>
     </div>
     <div id="cover" style="display: none;">
-        <div id="tbox">
-            <h3>AnimalName</h3>
+        <div class="tbox">
+            <h3>Puffin</h3>
             <img src="assets/close.png" alt="close button"></img>
-            <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt consequatur iure laudantium nihil. Corporis optio dolores numquam ad dolore laudantium similique omnis, voluptatem itaque ex cum soluta et, consequatur sequi?<br> Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Vel nesciunt delectus doloribus aliquid aperiam maiores, molestiae repellendus aliquam consectetur, tenetur voluptates et distinctio nulla, quibusdam perferendis nisi quae. Magni, deleniti.</p>
+            <p class="info">Habitat: Open Ocean <br> Location: Atlantic and North Pacific Oceans<br> Lifespan: 20 years<br> Size: 32 – 38 cms long. Wingspan 53 – 63 cms.<br> Weight: 380 – 780 grams<br> Color: Black and white plumage with bright orange legs. In the breeding
+                season the beak is brightly coloured with orange, yellow and black regions. Outside of the breeding season the beak’s colours fade significantly<br> Diet: Small fish and zooplankton<br> Predators: Birds of prey, large gull species and
+                mammals including foxes, rats, mink and cats, and seals<br> Top Speed: 88 kph (55 mph)<br> No. of Species: 3
+            </p>
         </div>
     </div>
 </body>
