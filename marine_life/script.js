@@ -6,23 +6,24 @@
 // var hadopelagic = $('#hadopelagic')[0];
 // var layers = $('.layer');
 var page = 0;
+var active_animal = null;
 
 
 
 //start of an attempt at one page scrolling
-window.scrollBy(0, window.innerHeight);
+// window.scrollBy(0, window.innerHeight);
 
 
 //parallax scroll but a bit choppy
-$(window).on('scroll', function() {
-    var val = window.scrollY % window.innerHeight();
+// $(window).on('scroll', function() {
+//     var val = window.scrollY % window.innerHeight();
 
-    $.each($('.des'), function(i) {
-        if (isInViewport($('.des')[i])) {
-            $('.des')[i].style.transform = 'translateY(' + val + 'px)';
-        }
-    });
-});
+//     $.each($('.des'), function(i) {
+//         if (isInViewport($('.des')[i])) {
+//             $('.des')[i].style.transform = 'translateY(' + val + 'px)';
+//         }
+//     });
+// });
 
 
 //image functions & manipulation
@@ -34,10 +35,13 @@ $(window).on('scroll', function() {
 //     $(this).css('height', '20vmin');
 // });
 
+
 ///image click
 $('#sea img').click(function(e) {
     e.preventDefault();
     $('#cover').show(600);
+    active_animal = this.alt;
+    $('#' + active_animal).show(600);
     // $('#tbox').show();
     $('body').css('overflow', 'hidden');
 });
@@ -46,7 +50,7 @@ $('#sea img').click(function(e) {
 $('.tbox img').click(function(e) {
     e.preventDefault();
     $('#cover').hide(600);
-    // $('#tbox').hide();
+    $('#' + active_animal).hide(600);
     $('body').css('overflow', 'visible');
 });
 
@@ -92,4 +96,8 @@ $("#sea").onepage_scroll({
     // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
     // the browser's width is less than 600, the fallback will kick in.
     direction: "vertical" // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+});
+
+window.addEventListener('scroll', function() {
+
 });

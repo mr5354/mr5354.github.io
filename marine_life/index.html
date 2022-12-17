@@ -9,7 +9,7 @@
     <title>Marine Life</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
-    <script src="assets/jquery.onepage-scroll.min.js" defer></script>
+    <script src="assets/jquery.onepage-scroll.js" defer></script>
     <script src="script.js" defer></script>
 
     <link rel="stylesheet" href="styles.css" />
@@ -23,6 +23,7 @@
         <section class="layer" id="sky">
             <div class="des">
                 <h2>Sky</h2>
+                <p>The upper atmosphere or expanse of space that constitutes an apparent great vault or arch over the earth</p>
             </div>
             <img src="assets/animals/puffin.png" alt="puffin" style="top: 20vh; left: 70vw;"></img>
         </section>
@@ -33,7 +34,7 @@
                     This is the zone in which photosynthesis can occur, because light is available.
                 </p>
             </div>
-            <img src="assets/animals/sardines.png" alt="sardines" style="top: 60vh; left: 40vw;"></img>
+            <img src="assets/animals/sardines.png" alt="sardine" style="top: 60vh; left: 40vw;"></img>
         </section>
         <section class="layer" id="mesopelagic">
             <div class="des">
@@ -44,7 +45,7 @@
             </div>
             <img src="assets/animals/swordfish.png" alt="swordfish" style="top: 50vh; left: 60vw;"></img>
         </section>
-        <section class="layer" id="bathypelagic">
+        <!-- <section class="layer" id="bathypelagic">
             <div class="des">
                 <h2>Bathypelagic Layer</h2>
                 <p>
@@ -67,15 +68,29 @@
                     In some places, there are trenches that are deeper than the surrounding ocean floor. These areas are the hadopelagic zone. At a depth of over 36,000 feet, the Mariana Trench is the deepest known point in the ocean.
                 </p>
             </div>
-        </section>
+        </section> -->
     </div>
     <div id="cover" style="display: none;">
-        <div class="tbox">
+        <div class="tbox" id="puffin" style="display: none;">
             <h3>Puffin</h3>
             <img src="assets/close.png" alt="close button"></img>
             <p class="info">Habitat: Open Ocean <br> Location: Atlantic and North Pacific Oceans<br> Lifespan: 20 years<br> Size: 32 – 38 cms long. Wingspan 53 – 63 cms.<br> Weight: 380 – 780 grams<br> Color: Black and white plumage with bright orange legs. In the breeding
                 season the beak is brightly coloured with orange, yellow and black regions. Outside of the breeding season the beak’s colours fade significantly<br> Diet: Small fish and zooplankton<br> Predators: Birds of prey, large gull species and
                 mammals including foxes, rats, mink and cats, and seals<br> Top Speed: 88 kph (55 mph)<br> No. of Species: 3
+            </p>
+        </div>
+        <div class="tbox" id="sardine" style="display: none;">
+            <h3>Sardines</h3>
+            <img src="assets/close.png" alt="close button"></img>
+            <p class="info">Habitat: Open Ocean <br> Location: Oceans Worldwide<br> Lifespan: Up to 13 years<br> Size: 15-30 cms long<br> Weight: 85 – 3200 grams<br> Color: Silver<br> Diet: Zooplankton and phytoplankton<br> Predators: Dolphins, seals, penguins, sharks,
+                terns, pelicans<br> No. of Species: 21
+            </p>
+        </div>
+        <div class="tbox" id="swordfish" style="display: none;">
+            <h3>Swordfish</h3>
+            <img src="assets/close.png" alt="close button"></img>
+            <p class="info">Habitat: Open ocean<br/> Location: Throughout the temperate and tropical regions of the Atlantic, Pacific and Indian Oceans<br/> Lifespan: At least 16 years<br/> Size: Up to 4.5 meters (14ft 11 in)<br/> Weight: Up to 650 kilograms (1,430 lbs)<br/>                Color: Deep blue on the upper surfaces of the body and pectoral fins, white on the undersides<br/> Diet: Pelagic fish and squid. Also known to prey upon benthic fish and crustaceans<br/> Predators: Adults are occasionally predated by orca
+                and shortfin mako sharks. Juveniles are more vulnerable and preyed upon by a wide range of oceanic predators<br/> Top Speed: 64 kph (40 mph)<br/> No. of Species: 1
             </p>
         </div>
     </div>

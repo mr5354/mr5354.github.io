@@ -1,6 +1,6 @@
 {
     "habitat": "open sea",
-    "layers": [{
+    "zones": [{
             "epipelagic": {
                 "description": "This is the zone in which photosynthesis can occur, because light is available.",
                 "depth": 200,
