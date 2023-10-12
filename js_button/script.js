@@ -1,4 +1,4 @@
-var caterpillar = new Array();
+var caterpillar = [];
 
 function grow() {
     var x = document.createElement("img");
